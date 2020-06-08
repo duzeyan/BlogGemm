@@ -72,7 +72,7 @@ void testAll()
 	gemm_v0_MNK(A, B, C, M, N, K);
 
 	// run vary versions
-	int select[] = {9};// index in gemmProxy
+	int select[] = {0,1,2,3,4,5,6,7,8,9};// index in gemmProxy
 	for (int i = 0; i < sizeof(select) / 4; i++)
 	{
 		{
